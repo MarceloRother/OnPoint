@@ -1,0 +1,5 @@
+# Ingora os arquivos buildados
+build/*
+
+# Pra galera que usa vscode
+.vscode/
