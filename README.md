@@ -44,6 +44,7 @@ OnPoint é um sistema (aplicativo desktop) de gerenciamento de ponto de empresas
 Sujeridos:
 
 - [Qt para frontend](https://doc.qt.io/qt-5/qtgui-index.html)
+- [ou ImGUI para o frontend](https://github.com/ocornut/imgui)
 - [JSON for Modern C++ para persistência](https://github.com/nlohmann/json)
 - [Catch2 para testes](https://github.com/catchorg/Catch2)
 
