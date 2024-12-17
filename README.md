@@ -24,8 +24,8 @@ OnPoint é um sistema (aplicativo desktop) de gerenciamento de ponto de empresas
   - Solicitação férias, vender férias, (F)
   - Aprovação férias (G)
 
-*F: Funcionário*
-*G: Gerente*
+*F: Funcionário*  
+*G: Gerente*  
 *Férias entra uma parte como funcionalidade básica e outra como avançada*
 
 ## Documento de Requisitos
@@ -74,5 +74,5 @@ onpoint/
 
 ## Build
 
-Para compilar o projeto, basta rodar o comando `make` na raiz do projeto. O executável será gerado na pasta `build/bin/`.
+Para compilar o projeto, basta rodar o comando `make` na raiz do projeto. O executável será gerado na pasta `build/bin/`.  
 Em caso de erros do make, rodar `make clean` para limpar o cache e `make` novamente.
