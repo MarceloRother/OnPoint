@@ -4,7 +4,6 @@ TARGET_TEST = build/bin/test_runner
 # Flags pro compilador
 CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++11 -Iinclude -Iinclude/backends
-# TODO Adicionar path para a lib de GUI quando decidirmos
 
 # Diretorios para compilacao
 SRC_DIR = src
@@ -23,7 +22,7 @@ GLEW_LIB = -lGLEW
 # Lib de GUI
 IMGUI_DIR = imgui
 IMGUI_INCLUDE = -I$(INCLUDE_DIR)
-IMGUI_SRC = $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_tables\
+IMGUI_SRC = $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_tables.cpp\
             $(IMGUI_DIR)/imgui_widgets.cpp $(IMGUI_DIR)/backends/imgui_impl_glfw.cpp \
             $(IMGUI_DIR)/backends/imgui_impl_opengl3.cpp
 
