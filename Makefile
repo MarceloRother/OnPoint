@@ -30,7 +30,8 @@ IMGUI_SRC = $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgu
 CATCH2_INCLUDE = -I$(INCLUDE_DIR)/catch2
 
 # Fontes e objetos dos testes
-SRCS = $(wildcard $(SRC_DIR)/*.cpp)
+SRCS = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/view/*.cpp) \
+		$(wildcard $(SRC_DIR)/model/*.cpp) $(wildcard $(SRC_DIR)/controller/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRCS))
 TEST_SRCS = $(wildcard $(TEST_DIR)/*.cpp)
 TEST_OBJS = $(patsubst $(TEST_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(TEST_SRCS))
@@ -48,6 +49,7 @@ $(TARGET): $(OBJS) $(IMGUI_SRC) | $(BIN_DIR)
 
 # Compilacao dos objetos
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
+	@mkdir -p $(dir $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Executar testes
@@ -59,6 +61,16 @@ test: $(OBJS) $(TEST_OBJS)
 $(BUILD_DIR)/%.o: $(TEST_DIR)/%.cpp
 	@mkdir -p $(BUILD_DIR)
 	$(CXX) $(CXXFLAGS) $(GLFW_INCLUDE) $(IMGUI_INCLUDE) -c $< -o $@
+
+# Roda o binario
+run:
+	@if [ -f $(TARGET) ]; then \
+		echo "Running $(TARGET)..."; \
+		$(TARGET); \
+	else \
+		echo "Error: $(TARGET) not found. Compile the project first using 'make'."; \
+		exit 1; \
+	fi
 
 # Limpar build e cache
 clean:
