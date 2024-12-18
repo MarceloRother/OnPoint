@@ -1,6 +1,0 @@
-g++ -Wall -Wextra -std=c++11 -Iinclude -Iinclude/backends -o build/bin/onpoint build/main.o imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_tables.cpp imgui/imgui_widgets.cpp imgui/backends/imgui_impl_glfw.cpp imgui/backends/imgui_impl_opengl3.cpp -lglfw -lGL -lGLEW
-/usr/bin/ld: build/main.o: in function `main':
-main.cpp:(.text+0x169): undefined reference to `DummyView::DummyView(DummyController&)'
-/usr/bin/ld: main.cpp:(.text+0x18b): undefined reference to `DummyView::render()'
-collect2: error: ld returned 1 exit status
-make: *** [Makefile:47: build/bin/onpoint] Error 1
