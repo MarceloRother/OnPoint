@@ -30,21 +30,19 @@ OnPoint é um sistema (aplicativo desktop) de gerenciamento de ponto de empresas
 
 ## Documento de Requisitos
 
-### TODO: Inserir link
+**[Link](https://docs.google.com/document/d/1xuJsYoNLxCbsjtd0VRltBEp-ul_sF35xkzdqI95Chf4/edit?tab=t.0) para Google Docs**
 
 ## Stack
 
 - C++ para backend
 - Compilador: g++11
-- Qt ou Similar para frontend (a ser definido)
+- Dear ImGUI para frontend
 - Não é necessário banco de dados, então salvaremos em JSON
 - Makefile para compilação
 - Catch2 para testes (a ser definido)
 
 Sujeridos:
 
-- [Qt para frontend](https://doc.qt.io/qt-5/qtgui-index.html)
-- [ou ImGUI para o frontend](https://github.com/ocornut/imgui)
 - [JSON for Modern C++ para persistência](https://github.com/nlohmann/json)
 - [Catch2 para testes](https://github.com/catchorg/Catch2)
 
@@ -54,14 +52,15 @@ Sujeridos:
 onpoint/
   ├── src/
   │   ├── main.cpp
-  │   ├── models/         # Classes de modelo
-  │   ├── views/          # Classes de visualização
-  │   ├── controllers/    # Classes de controle
+  │   ├── model/         # Classes de modelo
+  │   ├── view/          # Classes de visualização
+  │   ├── controller/    # Classes de controle
   │   
   ├── test/               # Arquivos de unit-testing com a framework escolhida
   │
   ├── data/               # Arquivos de persistência JSON (Bando de dados de pobre)
   │
+  ├── imgui               # Biblioteca de interface gráfica 
   ├── include/            # Headers e bibliotecas
   ├── build/              # Arquivos de compilação
   │   ├── bin/            # Executável
@@ -72,7 +71,32 @@ onpoint/
   ├── LICENSE             # Licença
 ```
 
+## Requisitos de Desenvolvimento
+
+- C++11 ou superior
+- Compilador g++11 ou superior
+- Make
+- Git
+- Bibliotecas necessárias para Dear ImGUI (GLFW + OpenGL)
+- Dear ImGUI (incluso no projeto)
+
+### Instalação
+
+Ubuntu:
+
+```bash
+sudo apt install libglfw3-dev libglew-dev git build-essential -y
+git clone git@github.com:MarceloRother/OnPoint.git
+cd OnPoint
+make
+make run
+```
+
+Windows:  
+*Não sei ainda kkkk*
+
 ## Build
 
 Para compilar o projeto, basta rodar o comando `make` na raiz do projeto. O executável será gerado na pasta `build/bin/`.  
-Em caso de erros do make, rodar `make clean` para limpar o cache e `make` novamente.
+Em caso de erros do make, rodar `make clean` para limpar o cache e `make` novamente.  
+**TODO: Regras de compilação para diferentes arquiteturas**
