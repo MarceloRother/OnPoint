@@ -3,7 +3,7 @@ TARGET_TEST = build/bin/test_runner
 
 # Flags pro compilador
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++11
+CXXFLAGS = -Wall -Wextra -std=c++11 -Iinclude -Iinclude/backends
 # TODO Adicionar path para a lib de GUI quando decidirmos
 
 # Diretorios para compilacao
@@ -14,7 +14,18 @@ INCLUDE_DIR = include
 BIN_DIR = build/bin
 OBJ_DIR = build/obj
 
-# TODO Adicionar flags e diretorios pra lib de GUI
+# Dependencias de GUI (Este trecho so deve funfar no Linux nn sei como faz para win)
+GLFW_INCLUDE = -I/usr/include/GLFW
+GLFW_LIB = -lglfw
+OPENGL_LIB = -lGL
+GLEW_LIB = -lGLEW
+
+# Lib de GUI
+IMGUI_DIR = imgui
+IMGUI_INCLUDE = -I$(INCLUDE_DIR)
+IMGUI_SRC = $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_tables\
+            $(IMGUI_DIR)/imgui_widgets.cpp $(IMGUI_DIR)/backends/imgui_impl_glfw.cpp \
+            $(IMGUI_DIR)/backends/imgui_impl_opengl3.cpp
 
 # Lib de testes
 CATCH2_INCLUDE = -I$(INCLUDE_DIR)/catch2
@@ -33,23 +44,22 @@ $(BIN_DIR):
 	@mkdir -p $(BIN_DIR)
 
 # Compilacao geral do projeto
-$(TARGET): $(OBJS) | $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+$(TARGET): $(OBJS) $(IMGUI_SRC) | $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(GLFW_LIB) $(OPENGL_LIB) $(GLEW_LIB)
 
 # Compilacao dos objetos
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
-	@mkdir -p $(BUILD_DIR)
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Executar testes
 test: $(OBJS) $(TEST_OBJS)
-	$(CXX) $(CXXFLAGS) -o $(TARGET_TEST) $(OBJS) $(TEST_OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET_TEST) $(OBJS) $(TEST_OBJS) $(GLFW_LIB) $(OPENGL_LIB) $(GLEW_LIB)
 	./test_runner
 
 # Compilar testes
 $(BUILD_DIR)/%.o: $(TEST_DIR)/%.cpp
 	@mkdir -p $(BUILD_DIR)
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) $(GLFW_INCLUDE) $(IMGUI_INCLUDE) -c $< -o $@
 
 # Limpar build e cache
 clean:

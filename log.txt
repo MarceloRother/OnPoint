@@ -1,0 +1,387 @@
+g++ -Wall -Wextra -std=c++11 -Iinclude -Iinclude/backends    imgui/imgui_tables.cpp   -o imgui/imgui_tables
+/usr/bin/ld: /tmp/ccqhBuY2.o: warning: relocation against `GImGui' in read-only section `.text._ZN5ImGui14LocalizeGetMsgE11ImGuiLocKey[_ZN5ImGui14LocalizeGetMsgE11ImGuiLocKey]'
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableFindByID(unsigned int)':
+imgui_tables.cpp:(.text+0x2d6): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::BeginTable(char const*, int, int, ImVec2 const&, float)':
+imgui_tables.cpp:(.text+0x31f): undefined reference to `ImGui::GetID(char const*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::BeginTableEx(char const*, unsigned int, int, int, ImVec2 const&, float)':
+imgui_tables.cpp:(.text+0x392): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x461): undefined reference to `ImGui::GetContentRegionAvail()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4cc): undefined reference to `ImGui::CalcItemSize(ImVec2, float, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x599): undefined reference to `ImGui::IsClippedEx(ImRect const&, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5f3): undefined reference to `ImGui::ItemAdd(ImRect const&, unsigned int, ImRect const*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x965): undefined reference to `ImGui::GetIDWithSeed(char const*, char const*, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x976): undefined reference to `ImGui::GetIDWithSeed(int, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xaf0): undefined reference to `ImGui::SetNextWindowContentSize(ImVec2 const&)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb41): undefined reference to `ImGui::SetNextWindowScroll(ImVec2 const&)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb9a): undefined reference to `ImGui::BeginChildEx(char const*, unsigned int, ImVec2 const&, int, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe37): undefined reference to `ImGui::PushOverrideID(unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe4d): undefined reference to `ImGui::PushOverrideID(unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x15c1): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x15e2): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x1b49): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableBeginInitMemory(ImGuiTable*, int)':
+imgui_tables.cpp:(.text+0x1de7): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableUpdateLayout(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x259f): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x3651): undefined reference to `ImGui::ItemHoverable(ImRect const&, unsigned int, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x44fb): undefined reference to `ImGui::EndPopup()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x463b): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x466b): undefined reference to `ImDrawList::PushClipRect(ImVec2 const&, ImVec2 const&, bool)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableUpdateBorders(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x46ac): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x492d): undefined reference to `ImGui::ItemAdd(ImRect const&, unsigned int, ImRect const*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4952): undefined reference to `ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4965): undefined reference to `ImGui::IsMouseDoubleClicked(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x498f): undefined reference to `ImGui::ClearActiveID()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4a55): undefined reference to `ImGui::SetMouseCursor(int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::EndTable()':
+imgui_tables.cpp:(.text+0x4ab1): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4c02): undefined reference to `ImGui::IsAnyItemHovered()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4c13): undefined reference to `ImGui::IsMouseReleased(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4efe): undefined reference to `ImDrawList::PopClipRect()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4f8c): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x4fc2): undefined reference to `ImDrawListSplitter::Merge(ImDrawList*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x531c): undefined reference to `ImGui::SetScrollFromPosX(ImGuiWindow*, float, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5372): undefined reference to `ImGui::SetScrollFromPosX(ImGuiWindow*, float, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x54e5): undefined reference to `ImGui::ErrorLog(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5566): undefined reference to `ImGui::ErrorLog(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x55cc): undefined reference to `ImGui::PopID()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x55d1): undefined reference to `ImGui::PopID()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x56d0): undefined reference to `ImGui::EndChild()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5724): undefined reference to `ImGui::ItemSize(ImVec2 const&, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5745): undefined reference to `ImGui::ItemAdd(ImRect const&, unsigned int, ImRect const*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5b8e): undefined reference to `ImGui::NavUpdateCurrentWindowIsScrollPushableX()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetupColumn(char const*, int, float, unsigned int)':
+imgui_tables.cpp:(.text+0x5bc8): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5cbd): undefined reference to `ImGui::ErrorLog(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x5fe2): undefined reference to `ImGuiTextBuffer::append(char const*, char const*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetupScrollFreeze(int, int)':
+imgui_tables.cpp:(.text+0x6005): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetColumnCount()':
+imgui_tables.cpp:(.text+0x6303): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetColumnName(int)':
+imgui_tables.cpp:(.text+0x6343): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetColumnEnabled(int, bool)':
+imgui_tables.cpp:(.text+0x6432): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetColumnFlags(int)':
+imgui_tables.cpp:(.text+0x653e): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o:imgui_tables.cpp:(.text+0x6737): more undefined references to `GImGui' follow
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableBeginRow(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x6dc4): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableEndRow(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x6e31): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x6f00): undefined reference to `ImGui::LogRenderedText(ImVec2 const*, char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x713b): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x7295): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x735c): undefined reference to `ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x73ae): undefined reference to `ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x74f8): undefined reference to `ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x75ce): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x7694): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x7a09): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetColumnIndex()':
+imgui_tables.cpp:(.text+0x7a7a): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetColumnIndex(int)':
+imgui_tables.cpp:(.text+0x7aba): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableNextColumn()':
+imgui_tables.cpp:(.text+0x7b7a): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableBeginCell(ImGuiTable*, int)':
+imgui_tables.cpp:(.text+0x7c52): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x7e47): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x7e8c): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x7ecb): undefined reference to `ImGui::LogRenderedText(ImVec2 const*, char const*, char const*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableEndCell(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x7f32): undefined reference to `ImGui::ErrorCheckUsingSetCursorPosToExtendParentBoundaries()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetColumnWidth(int, float)':
+imgui_tables.cpp:(.text+0x8341): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TablePushBackgroundChannel()':
+imgui_tables.cpp:(.text+0x899f): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x8a2e): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TablePopBackgroundChannel()':
+imgui_tables.cpp:(.text+0x8a44): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x8ac9): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetupDrawChannels(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x8bc3): undefined reference to `ImDrawListSplitter::Split(ImDrawList*, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableMergeDrawChannels(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x8dd6): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `TableGetColumnBorderCol(ImGuiTable*, int, int)':
+imgui_tables.cpp:(.text+0x9ac0): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableDrawBorders(ImGuiTable*)':
+imgui_tables.cpp:(.text+0x9b90): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x9bbd): undefined reference to `ImDrawList::PushClipRect(ImVec2 const&, ImVec2 const&, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x9f6d): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa022): undefined reference to `ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa07d): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa0c5): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa120): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa168): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa268): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xa274): undefined reference to `ImDrawList::PopClipRect()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetSortSpecs()':
+imgui_tables.cpp:(.text+0xa2a7): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSetColumnSortDirection(int, ImGuiSortDirection, bool)':
+imgui_tables.cpp:(.text+0xa548): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetHeaderRowHeight()':
+imgui_tables.cpp:(.text+0xacc1): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xad72): undefined reference to `ImGui::CalcTextSize(char const*, char const*, bool, float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetHeaderAngledMaxLabelWidth()':
+imgui_tables.cpp:(.text+0xadd3): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xae7c): undefined reference to `ImGui::CalcTextSize(char const*, char const*, bool, float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableHeadersRow()':
+imgui_tables.cpp:(.text+0xaed9): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xaf5b): undefined reference to `ImGui::GetCursorScreenPos()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xafd0): undefined reference to `ImGui::PushID(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xafe1): undefined reference to `ImGui::PopID()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xaff5): undefined reference to `ImGui::GetMousePos()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb008): undefined reference to `ImGui::IsMouseReleased(int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableHeader(char const*)':
+imgui_tables.cpp:(.text+0xb083): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb17f): undefined reference to `ImGui::FindRenderedTextEnd(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb1a8): undefined reference to `ImGui::CalcTextSize(char const*, char const*, bool, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb30c): undefined reference to `ImFormatString(char*, unsigned long, char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb343): undefined reference to `ImGui::CalcTextSize(char const*, char const*, bool, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb412): undefined reference to `ImGuiWindow::GetID(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb4b0): undefined reference to `ImGui::ItemSize(ImVec2 const&, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb4cc): undefined reference to `ImGui::ItemAdd(ImRect const&, unsigned int, ImRect const*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb518): undefined reference to `ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb577): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb5c6): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb5ed): undefined reference to `ImGui::RenderNavCursor(ImRect const&, unsigned int, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb675): undefined reference to `ImGui::IsMouseDragging(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb931): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb93d): undefined reference to `ImGui::PushStyleColor(int, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb992): undefined reference to `ImGui::RenderText(ImVec2, char const*, char const*, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb99c): undefined reference to `ImGui::PopStyleColor(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xb9e5): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xba34): undefined reference to `ImGui::RenderArrow(ImDrawList*, ImVec2, unsigned int, ImGuiDir, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbb08): undefined reference to `ImGui::RenderTextEllipsis(ImDrawList*, ImVec2 const&, ImVec2 const&, float, float, char const*, char const*, ImVec2 const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbb7c): undefined reference to `ImGui::SetItemTooltip(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbb86): undefined reference to `ImGui::IsMouseReleased(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbb94): undefined reference to `ImGui::IsItemHovered(int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableAngledHeadersRow()':
+imgui_tables.cpp:(.text+0xbbfd): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbc5e): undefined reference to `ImGui::GetID(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbd1e): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbd35): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xbde7): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableAngledHeadersRowEx(unsigned int, float, float, ImGuiTableHeaderData const*, int)':
+imgui_tables.cpp:(.text+0xbeac): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc264): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc315): undefined reference to `ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc330): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc3a3): undefined reference to `ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc3ed): undefined reference to `ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc40f): undefined reference to `ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc41c): undefined reference to `ImGui::KeepAliveID(unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc66b): undefined reference to `ImDrawList::AddQuadFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc6a3): undefined reference to `ImDrawList::AddQuadFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc6f6): undefined reference to `ImGui::FindRenderedTextEnd(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc740): undefined reference to `ImTextCountLines(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc8d5): undefined reference to `ImGui::CalcTextSize(char const*, char const*, bool, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xc9c5): undefined reference to `ImGui::PushStyleColor(int, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xca04): undefined reference to `ImGui::RenderTextEllipsis(ImDrawList*, ImVec2 const&, ImVec2 const&, float, float, char const*, char const*, ImVec2 const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xca0e): undefined reference to `ImGui::PopStyleColor(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcc98): undefined reference to `ImGui::ShadeVertsTransformPos(ImDrawList*, int, int, ImVec2 const&, float, float, ImVec2 const&)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcd11): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcd43): undefined reference to `ImGui::PopClipRect()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcd48): undefined reference to `ImGui::PopClipRect()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableOpenContextMenu(int)':
+imgui_tables.cpp:(.text+0xcdd8): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcea9): undefined reference to `ImHashStr(char const*, unsigned long, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcebb): undefined reference to `ImGui::OpenPopupEx(unsigned int, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableBeginContextMenuPopup(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xcf18): undefined reference to `ImHashStr(char const*, unsigned long, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xcf2a): undefined reference to `ImGui::BeginPopupEx(unsigned int, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableDrawDefaultContextMenu(ImGuiTable*, int)':
+imgui_tables.cpp:(.text+0xcf62): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd050): undefined reference to `ImGui::MenuItem(char const*, char const*, bool, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd0cc): undefined reference to `ImGui::MenuItem(char const*, char const*, bool, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd119): undefined reference to `ImGui::MenuItem(char const*, char const*, bool, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd145): undefined reference to `ImGui::Separator()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd158): undefined reference to `ImGui::PushItemFlag(int, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd214): undefined reference to `ImGui::MenuItem(char const*, char const*, bool, bool)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd248): undefined reference to `ImGui::PopItemFlag()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSettingsCreate(unsigned int, int)':
+imgui_tables.cpp:(.text+0xd328): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSettingsFindByID(unsigned int)':
+imgui_tables.cpp:(.text+0xd385): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGetBoundSettings(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xd405): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSaveSettings(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xd512): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xd80e): undefined reference to `ImGui::MarkIniSettingsDirty()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableLoadSettings(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xd82a): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `TableSettingsHandler_ReadLine(ImGuiContext*, ImGuiSettingsHandler*, void*, char const*)':
+imgui_tables.cpp:(.text+0xddf5): undefined reference to `ImStrSkipBlank(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xde68): undefined reference to `ImStrSkipBlank(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xdeb7): undefined reference to `ImStrSkipBlank(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xdf2e): undefined reference to `ImStrSkipBlank(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xdf9f): undefined reference to `ImStrSkipBlank(char const*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o:imgui_tables.cpp:(.text+0xe015): more undefined references to `ImStrSkipBlank(char const*)' follow
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `TableSettingsHandler_WriteAll(ImGuiContext*, ImGuiSettingsHandler*, ImGuiTextBuffer*)':
+imgui_tables.cpp:(.text+0xe205): undefined reference to `ImGuiTextBuffer::appendf(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe256): undefined reference to `ImGuiTextBuffer::appendf(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe2df): undefined reference to `ImGuiTextBuffer::appendf(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe30c): undefined reference to `ImGuiTextBuffer::appendf(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe356): undefined reference to `ImGuiTextBuffer::appendf(char const*, ...)'
+/usr/bin/ld: /tmp/ccqhBuY2.o:imgui_tables.cpp:(.text+0xe392): more undefined references to `ImGuiTextBuffer::appendf(char const*, ...)' follow
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `TableSettingsHandler_WriteAll(ImGuiContext*, ImGuiSettingsHandler*, ImGuiTextBuffer*)':
+imgui_tables.cpp:(.text+0xe45d): undefined reference to `ImGuiTextBuffer::append(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe496): undefined reference to `ImGuiTextBuffer::append(char const*, char const*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableSettingsAddSettingsHandler()':
+imgui_tables.cpp:(.text+0xe518): undefined reference to `ImHashStr(char const*, unsigned long, unsigned int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe55e): undefined reference to `ImGui::AddSettingsHandler(ImGuiSettingsHandler const*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableRemove(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xe58c): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGcCompactTransientBuffers(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xe60a): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGcCompactTransientBuffers(ImGuiTableTempData*)':
+imgui_tables.cpp:(.text+0xe724): undefined reference to `ImDrawListSplitter::ClearFreeMemory()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::TableGcCompactSettings()':
+imgui_tables.cpp:(.text+0xe75b): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::DebugNodeTable(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xe97b): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe9bf): undefined reference to `ImGui::GetStyleColorVec4(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xe9cc): undefined reference to `ImGui::PushStyleColor(int, ImVec4 const&)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xea2b): undefined reference to `ImGui::TreeNode(void const*, char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xea49): undefined reference to `ImGui::PopStyleColor(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xea53): undefined reference to `ImGui::IsItemHovered(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xea5c): undefined reference to `ImGui::GetForegroundDrawList()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xea9d): undefined reference to `ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xeaa2): undefined reference to `ImGui::IsItemVisible()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xeacf): undefined reference to `ImGui::GetForegroundDrawList()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xead7): undefined reference to `ImGui::GetItemRectMax()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xeae8): undefined reference to `ImGui::GetItemRectMin()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xeb2a): undefined reference to `ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xeb71): undefined reference to `ImGui::Text(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xeb9c): undefined reference to `ImGui::DebugBreakButton(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xebcd): undefined reference to `ImGui::SameLine(float, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xebdc): undefined reference to `ImGui::SmallButton(char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xec93): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xed2e): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xedb0): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xede6): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xee2d): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: /tmp/ccqhBuY2.o:imgui_tables.cpp:(.text+0xee9b): more undefined references to `ImGui::BulletText(char const*, ...)' follow
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::DebugNodeTable(ImGuiTable*)':
+imgui_tables.cpp:(.text+0xf442): undefined reference to `ImFormatString(char*, unsigned long, char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf44e): undefined reference to `ImGui::Bullet()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf48e): undefined reference to `ImGui::Selectable(char const*, bool, int, ImVec2 const&)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf498): undefined reference to `ImGui::IsItemHovered(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf4f5): undefined reference to `ImGui::GetForegroundDrawList()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf532): undefined reference to `ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf59a): undefined reference to `ImGui::TreePop()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::DebugNodeTableSettings(ImGuiTableSettings*)':
+imgui_tables.cpp:(.text+0xf604): undefined reference to `ImGui::TreeNode(void const*, char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf62c): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf656): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf754): undefined reference to `ImGui::BulletText(char const*, ...)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xf773): undefined reference to `ImGui::TreePop()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `GetDraggedColumnOffset(ImGuiOldColumns*, int)':
+imgui_tables.cpp:(.text+0xf93d): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::GetColumnWidth(int)':
+imgui_tables.cpp:(.text+0xfc54): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0xfc82): undefined reference to `ImGui::GetContentRegionAvail()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::SetColumnOffset(int, float)':
+imgui_tables.cpp:(.text+0xfd15): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::PushColumnClipRect(int)':
+imgui_tables.cpp:(.text+0xfff7): undefined reference to `ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::PushColumnsBackground()':
+imgui_tables.cpp:(.text+0x10082): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::PopColumnsBackground()':
+imgui_tables.cpp:(.text+0x100f6): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::GetColumnsID(char const*, int)':
+imgui_tables.cpp:(.text+0x10285): undefined reference to `ImGui::PushID(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x102ad): undefined reference to `ImGuiWindow::GetID(char const*, char const*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x102b5): undefined reference to `ImGui::PopID()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::BeginColumns(char const*, int, int)':
+imgui_tables.cpp:(.text+0x102f2): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10855): undefined reference to `ImDrawListSplitter::Split(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10878): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x108dc): undefined reference to `ImGui::PushItemWidth(float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::NextColumn()':
+imgui_tables.cpp:(.text+0x109ee): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10abd): undefined reference to `ImGui::PopItemWidth()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10b19): undefined reference to `ImDrawListSplitter::SetCurrentChannel(ImDrawList*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10ccf): undefined reference to `ImGui::PushItemWidth(float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::EndColumns()':
+imgui_tables.cpp:(.text+0x10d30): undefined reference to `GImGui'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10d80): undefined reference to `ImGui::PopItemWidth()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10d91): undefined reference to `ImGui::PopClipRect()'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10daf): undefined reference to `ImDrawListSplitter::Merge(ImDrawList*)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10fb3): undefined reference to `ImGui::ItemAdd(ImRect const&, unsigned int, ImRect const*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x10ffc): undefined reference to `ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x1101c): undefined reference to `ImGui::SetMouseCursor(int)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x1107b): undefined reference to `ImGui::GetColorU32(int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x11101): undefined reference to `ImDrawList::AddLine(ImVec2 const&, ImVec2 const&, unsigned int, float)'
+/usr/bin/ld: imgui_tables.cpp:(.text+0x11291): undefined reference to `ImGui::NavUpdateCurrentWindowIsScrollPushableX()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImDrawListSplitter::~ImDrawListSplitter()':
+imgui_tables.cpp:(.text._ZN18ImDrawListSplitterD2Ev[_ZN18ImDrawListSplitterD5Ev]+0x18): undefined reference to `ImDrawListSplitter::ClearFreeMemory()'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGuiTable::~ImGuiTable()':
+imgui_tables.cpp:(.text._ZN10ImGuiTableD2Ev[_ZN10ImGuiTableD5Ev]+0x1c): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::GetCurrentWindowRead()':
+imgui_tables.cpp:(.text._ZN5ImGui20GetCurrentWindowReadEv[_ZN5ImGui20GetCurrentWindowReadEv]+0xb): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::GetCurrentWindow()':
+imgui_tables.cpp:(.text._ZN5ImGui16GetCurrentWindowEv[_ZN5ImGui16GetCurrentWindowEv]+0xb): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::LocalizeGetMsg(ImGuiLocKey)':
+imgui_tables.cpp:(.text._ZN5ImGui14LocalizeGetMsgE11ImGuiLocKey[_ZN5ImGui14LocalizeGetMsgE11ImGuiLocKey]+0xe): undefined reference to `GImGui'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImGui::ItemSize(ImRect const&, float)':
+imgui_tables.cpp:(.text._ZN5ImGui8ItemSizeERK6ImRectf[_ZN5ImGui8ItemSizeERK6ImRectf]+0x48): undefined reference to `ImGui::ItemSize(ImVec2 const&, float)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<char>::~ImVector()':
+imgui_tables.cpp:(.text._ZN8ImVectorIcED2Ev[_ZN8ImVectorIcED5Ev]+0x29): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<char>::clear()':
+imgui_tables.cpp:(.text._ZN8ImVectorIcE5clearEv[_ZN8ImVectorIcE5clearEv]+0x41): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<char>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorIcE7reserveEi[_ZN8ImVectorIcE7reserveEi]+0x28): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorIcE7reserveEi[_ZN8ImVectorIcE7reserveEi]+0x69): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImDrawChannel>::~ImVector()':
+imgui_tables.cpp:(.text._ZN8ImVectorI13ImDrawChannelED2Ev[_ZN8ImVectorI13ImDrawChannelED5Ev]+0x29): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiOldColumnData>::~ImVector()':
+imgui_tables.cpp:(.text._ZN8ImVectorI18ImGuiOldColumnDataED2Ev[_ZN8ImVectorI18ImGuiOldColumnDataED5Ev]+0x29): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableInstanceData>::~ImVector()':
+imgui_tables.cpp:(.text._ZN8ImVectorI22ImGuiTableInstanceDataED2Ev[_ZN8ImVectorI22ImGuiTableInstanceDataED5Ev]+0x29): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableColumnSortSpecs>::~ImVector()':
+imgui_tables.cpp:(.text._ZN8ImVectorI25ImGuiTableColumnSortSpecsED2Ev[_ZN8ImVectorI25ImGuiTableColumnSortSpecsED5Ev]+0x29): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o:imgui_tables.cpp:(.text._ZN8ImVectorI20ImGuiTableHeaderDataED2Ev[_ZN8ImVectorI20ImGuiTableHeaderDataED5Ev]+0x29): more undefined references to `ImGui::MemFree(void*)' follow
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImPool<ImGuiTable>::GetByKey(unsigned int)':
+imgui_tables.cpp:(.text._ZN6ImPoolI10ImGuiTableE8GetByKeyEj[_ZN6ImPoolI10ImGuiTableE8GetByKeyEj]+0x29): undefined reference to `ImGuiStorage::GetInt(unsigned int, int) const'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImPool<ImGuiTable>::GetOrAddByKey(unsigned int)':
+imgui_tables.cpp:(.text._ZN6ImPoolI10ImGuiTableE13GetOrAddByKeyEj[_ZN6ImPoolI10ImGuiTableE13GetOrAddByKeyEj]+0x29): undefined reference to `ImGuiStorage::GetIntRef(unsigned int, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableHeaderData>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI20ImGuiTableHeaderDataE7reserveEi[_ZN8ImVectorI20ImGuiTableHeaderDataE7reserveEi]+0x2c): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI20ImGuiTableHeaderDataE7reserveEi[_ZN8ImVectorI20ImGuiTableHeaderDataE7reserveEi]+0x73): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableColumnSortSpecs>::clear()':
+imgui_tables.cpp:(.text._ZN8ImVectorI25ImGuiTableColumnSortSpecsE5clearEv[_ZN8ImVectorI25ImGuiTableColumnSortSpecsE5clearEv]+0x41): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiOldColumnData>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI18ImGuiOldColumnDataE7reserveEi[_ZN8ImVectorI18ImGuiOldColumnDataE7reserveEi]+0x3b): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI18ImGuiOldColumnDataE7reserveEi[_ZN8ImVectorI18ImGuiOldColumnDataE7reserveEi]+0x8d): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableTempData>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI18ImGuiTableTempDataE7reserveEi[_ZN8ImVectorI18ImGuiTableTempDataE7reserveEi]+0x3b): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI18ImGuiTableTempDataE7reserveEi[_ZN8ImVectorI18ImGuiTableTempDataE7reserveEi]+0x8d): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableInstanceData>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI22ImGuiTableInstanceDataE7reserveEi[_ZN8ImVectorI22ImGuiTableInstanceDataE7reserveEi]+0x3a): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI22ImGuiTableInstanceDataE7reserveEi[_ZN8ImVectorI22ImGuiTableInstanceDataE7reserveEi]+0x8b): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<float>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorIfE7reserveEi[_ZN8ImVectorIfE7reserveEi]+0x2c): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorIfE7reserveEi[_ZN8ImVectorIfE7reserveEi]+0x74): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImDrawChannel>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI13ImDrawChannelE7reserveEi[_ZN8ImVectorI13ImDrawChannelE7reserveEi]+0x2c): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI13ImDrawChannelE7reserveEi[_ZN8ImVectorI13ImDrawChannelE7reserveEi]+0x73): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTableColumnSortSpecs>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI25ImGuiTableColumnSortSpecsE7reserveEi[_ZN8ImVectorI25ImGuiTableColumnSortSpecsE7reserveEi]+0x3a): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI25ImGuiTableColumnSortSpecsE7reserveEi[_ZN8ImVectorI25ImGuiTableColumnSortSpecsE7reserveEi]+0x8b): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImPool<ImGuiTable>::Remove(unsigned int, int)':
+imgui_tables.cpp:(.text._ZN6ImPoolI10ImGuiTableE6RemoveEji[_ZN6ImPoolI10ImGuiTableE6RemoveEji]+0x69): undefined reference to `ImGuiStorage::SetInt(unsigned int, int)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiOldColumns>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI15ImGuiOldColumnsE7reserveEi[_ZN8ImVectorI15ImGuiOldColumnsE7reserveEi]+0x3b): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI15ImGuiOldColumnsE7reserveEi[_ZN8ImVectorI15ImGuiOldColumnsE7reserveEi]+0x8d): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: /tmp/ccqhBuY2.o: in function `ImVector<ImGuiTable>::reserve(int)':
+imgui_tables.cpp:(.text._ZN8ImVectorI10ImGuiTableE7reserveEi[_ZN8ImVectorI10ImGuiTableE7reserveEi]+0x42): undefined reference to `ImGui::MemAlloc(unsigned long)'
+/usr/bin/ld: imgui_tables.cpp:(.text._ZN8ImVectorI10ImGuiTableE7reserveEi[_ZN8ImVectorI10ImGuiTableE7reserveEi]+0x9b): undefined reference to `ImGui::MemFree(void*)'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: imgui/imgui_tables] Error 1
