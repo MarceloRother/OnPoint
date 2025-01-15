@@ -3,7 +3,7 @@ TARGET_TEST = build/bin/test_runner
 
 # Flags pro compilador
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++11 -Iinclude -Iinclude/backends
+CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude -Iinclude/backends
 
 # Diretorios para compilacao
 SRC_DIR = src
