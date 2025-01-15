@@ -12,6 +12,9 @@
 #include "controller/DummyController.hpp"
 #include "view/DummyView.hpp"
 
+#define WIN_WIDTH 1280
+#define WIN_HEIGHT 720
+
 namespace fs = std::filesystem;
 
 int main() {
@@ -24,15 +27,21 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    
-    // vamo tentar fazer tela cheia depois
-    GLFWwindow* window = glfwCreateWindow(1000, 800, "OnPoint", nullptr, nullptr);
+   
+    GLFWwindow* window = glfwCreateWindow(WIN_WIDTH,
+                                          WIN_HEIGHT, 
+                                          "OnPoint", 
+                                          nullptr, 
+                                          nullptr);
     if (!window) {
         std::cerr << "Failed to create GLFW window\n";
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
+    
+    // Maximiza janela
+    glfwMaximizeWindow(window);
 
     // inicializando o imgui
     IMGUI_CHECKVERSION();
@@ -40,7 +49,7 @@ int main() {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 330");
     ImGuiIO& io = ImGui::GetIO(); (void)io;
-
+    
     // parte de estilo, o padrao eh muito feio 
     ImGuiStyle& style = ImGui::GetStyle();
     ImVec4* colors = style.Colors;
@@ -101,6 +110,7 @@ int main() {
         ImGui::NewFrame();
 
         view.render();
+
         ImGui::Render();
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
