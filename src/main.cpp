@@ -11,6 +11,7 @@
 #include "model/DummyModel.hpp"
 #include "controller/DummyController.hpp"
 #include "view/DummyView.hpp"
+#include "view/MainContext.hpp"
 
 #define WIN_WIDTH 1280
 #define WIN_HEIGHT 720
@@ -30,7 +31,7 @@ int main() {
    
     GLFWwindow* window = glfwCreateWindow(WIN_WIDTH,
                                           WIN_HEIGHT, 
-                                          "OnPoint", 
+                                          "OnPoint: Ponto Eletrônico", 
                                           nullptr, 
                                           nullptr);
     if (!window) {
@@ -100,6 +101,7 @@ int main() {
     DummyModel model;
     DummyController controller(model);
     DummyView view(controller);
+    MainContext mainCtx;
 
     // loop da aplicacao
     while (!glfwWindowShouldClose(window)) {
@@ -110,6 +112,7 @@ int main() {
         ImGui::NewFrame();
 
         view.render();
+        mainCtx.DrawMainContext();
 
         ImGui::Render();
         glClear(GL_COLOR_BUFFER_BIT);
