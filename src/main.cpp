@@ -11,7 +11,6 @@
 #include "model/DummyModel.hpp"
 #include "controller/DummyController.hpp"
 #include "view/DummyView.hpp"
-#include "view/MainContext.hpp"
 
 #define WIN_WIDTH 1280
 #define WIN_HEIGHT 720
@@ -50,7 +49,12 @@ int main() {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 330");
     ImGuiIO& io = ImGui::GetIO(); (void)io;
-    
+    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+    io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+
+    ImGui::StyleColorsDark();
+    /*
     // parte de estilo, o padrao eh muito feio 
     ImGuiStyle& style = ImGui::GetStyle();
     ImVec4* colors = style.Colors;
@@ -89,6 +93,7 @@ int main() {
     colors[ImGuiCol_CheckMark]       = ImVec4(0.33f, 0.58f, 0.72f, 1.0f);
     colors[ImGuiCol_SliderGrab]      = ImVec4(0.44f, 0.70f, 0.79f, 1.0f);
     colors[ImGuiCol_SliderGrabActive]= ImVec4(0.33f, 0.58f, 0.72f, 1.0f);
+    */
 
     // Fontes
     std::string relativePath = fs::current_path().u8string();
@@ -101,7 +106,6 @@ int main() {
     DummyModel model;
     DummyController controller(model);
     DummyView view(controller);
-    MainContext mainCtx;
 
     // loop da aplicacao
     while (!glfwWindowShouldClose(window)) {
@@ -110,9 +114,17 @@ int main() {
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
+        
+        //view.render();
+        ImGui::DockSpaceOverViewport(ImGui::GetID("MainDockspace"));
 
-        view.render();
-        mainCtx.DrawMainContext();
+        ImGui::Begin("Widget 1 (Esquerda)");
+        ImGui::Text("Este é o widget do lado esquerdo.");
+        ImGui::End();
+
+        ImGui::Begin("Widget 2 (Direita)");
+        ImGui::Text("Este é o widget do lado direito.");
+        ImGui::End();
 
         ImGui::Render();
         glClear(GL_COLOR_BUFFER_BIT);

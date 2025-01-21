@@ -5,7 +5,10 @@ DummyView::DummyView(DummyController& controller) : controller(controller) {}
 
 void DummyView::render() {
     ImGui::Begin("OnPoint");
-    
+
+    ImGuiID dockspace_id = ImGui::GetID("MainDockspace");
+    ImGui::DockSpace(dockspace_id);
+
     std::string currData = controller.fetchData();
     ImGui::Text("Data: %s", currData.c_str());
 
